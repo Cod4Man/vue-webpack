@@ -14,5 +14,10 @@ module.exports = {
         path: path.join(__dirname, './dist'),
         filename: 'bundle.js'
     },
-    plugins:[htmpPlugin]
+    plugins:[htmpPlugin], // 插件
+    module:{
+        rules:[ // loader规则
+            {test:/\.css$/,use:['style-loader','css-loader']}
+        ]
+    }
 }
