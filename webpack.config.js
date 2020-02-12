@@ -17,7 +17,7 @@ module.exports = {
     plugins:[htmpPlugin], // 插件
     module:{
         rules:[ // loader规则
-            {test:/\.css$/,use:['style-loader','css-loader']}
+            {test:/\.css$/,use:['style-loader','css-loader','postcss-loader']}
         ]
     }
 }
